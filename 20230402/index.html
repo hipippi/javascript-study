@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 2023-02-02
+       * 비교연산자
+       */
+      /**
+       * == (동등): 같으면 true를 반환
+       * 타입은 무시하며 비교 //number, string무시
+       *
+       */
+      console.log("1==1", 1 == 1);
+      console.log("1==2", 1 == 2);
+      console.log("1=='1'", 1 == "1");
+      console.log("true =='true'", true == "true");
+      console.log("null =='null'", null == "null");
+      console.log("undefined =='undefined'", undefined == "undefined");
+
+      /**
+       * != (부정): 다르면 true
+       * 타입은 무시
+       * ==, !== 모두 잘 사용하지 않음
+       */
+
+      console.log("1 !=1", 1 != 1);
+      console.log("1 !=2", 1 != 2);
+      console.log("1 !='2'", 1 != "2");
+
+      /**
+       * === (일치 ): 값과 타입이 모두 같은 경우 true
+       * 객체는 참조 주소로 비교
+       */
+      console.log("1 ===1", 1 === 1);
+      console.log("1 ==='1'", 1 === "1");
+      const obj1 = {
+        a: 1,
+        b: 2,
+      };
+      const obj2 = {
+        a: 1,
+        b: 2,
+      };
+      const obj3 = obj1;
+      console.log("obj1 === obj2", obj1 === obj2);
+      console.log("obj1 === obj3", obj1 === obj3);
+
+      /**
+       * !== (불일치): 값과 타입이 모두 다르면 true
+       */
+      console.log("1 !== 1", 1 !== 1);
+      console.log("1 !== '1'", 1 !== "1");
+
+      /**
+       * a>b (a가 b보다 큼)
+       * a<b (a가 b보다 작음)
+       * a>=b (a가 b보다 크거나 같음)
+       * a<=b (a가 b보다 작거나 같음).
+       * 문자형의 숫자가 들어오는 경우 자동 형변환(strong ->number)
+       */
+      console.log("'12'>1", "12" > 1);
+      console.log("-5<1", -5 < 1);
+      console.log("24>=24", 24 >= 24);
+      console.log("24<=24", 24 <= 24);
+    </script>
+  </body>
+  0
+</html>

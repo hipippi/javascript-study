@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 20230402
+       * 논리연산자
+       */
+      /** ! (not) 연산자 : true면 false, false면 true로 반환
+       * 강제로 boolean으로 변환
+      /**
+       * 타입의 true, false 조건
+       * 문자의 경우 ''빈값인 경우 false
+       * 숫자는 0이면 false, 그 외는 true
+       * null, undefined는 false
+       */
+      console.log("string", "string");
+      console.log("string", !"string"); // !true -> false.
+      console.log("string", !!"string"); // !!true -> !  !false -> true
+      console.log("string", !!""); // !!false -> !  !true -> false
+
+      console.log("number", !!12);
+      console.log("number", !!0);
+
+      console.log("null", !!null);
+      console.log("undefined", !!undefined);
+      /**
+       *  a && b(and): a와 b가 모두 true면 true를 반환
+       * a가 true이면 b를 반환
+       * a가 false면 a를 반환
+       */
+      console.log("0 && true", !!(0 && true));
+      console.log("'str1'&& 'str2'", "str1" && "str2"); //a가 true
+      console.log("''&&'str2'", "" && "str2"); //a가 false
+
+      /** a||b (or): a나 b중 하나가 true면 true
+       * a가 false면 b를 반환
+       * a가 true면 a를 반환
+       */
+      console.log("false || true", false || true);
+      console.log("true || 0", true || 0);
+      console.log("0 || 0", 0 || 0);
+    </script>
+  </body>
+</html>

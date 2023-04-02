@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 20230402
+       * 삼항연산자
+       * 단항연산자
+       * 관계연산자
+       */
+      /**
+       * 조건 a가 참이면 b를 실행 아니면 c를 반환
+       * a ? b: c
+       */
+      console.log("삼항연산자1", 1 === 2 ? "1===1 is true" : "1 ===1 is false");
+      console.log("삼항연산자2", "" === 10 ? 10 : 20);
+
+      /**
+       * 단항연산자 1개의 피연산자만 사용
+       * typeof : 현재 변수나 값의 타입을 반환
+       */
+      const str = "str";
+      const num = 10;
+      const obj = { a: 1, b: 2 };
+      const arr = [1, 2, 3];
+      const func = () => {};
+      const un = undefined;
+      const nul = null; // null type object
+
+      console.log("type of str", typeof str);
+      console.log("type of num", typeof num);
+      console.log("type of obj", typeof obj);
+      console.log("type of arr", typeof arr);
+      console.log("type of func", typeof func);
+      console.log("type of un", typeof un);
+      console.log("type of nul", typeof nul);
+
+      /**
+       * 관계연산자
+       * in: 객체의 property(key) 여부를 파악할 때 사용
+       */
+      const obj2 = {
+        a: 1,
+        b: 2,
+      };
+      console.log("a in obj2", "a" in obj2);
+      console.log("c in obj2", "c" in obj2);
+      const arr2 = [1, 2, 3, 4];
+      console.log("arr2", arr2);
+      console.log("0 in arr2", 0 in arr2);
+      console.log("1 in arr2", 1 in arr2);
+      console.log("length in arr2", "length" in arr2);
+    </script>
+  </body>
+</html>
