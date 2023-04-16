@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 20230416_4
+       * 조건문
+       * 삼항연산자, 논리연산자, nullish coalescing 활용
+       */
+
+      const a = "lemon";
+      console.log("a is ", a === "lemon" ? " fruit" : "not fruit");
+
+      const b = 3;
+      const result = b > 1 ? (b > 5 ? true : false) : false;
+      console.log(" b result", result);
+
+      // && 연산자를 활용한 조건문
+      // a&&b
+      // a가 true면 b를 실행
+      const c = 6;
+      c > 3 && console.log("c > 3");
+      //c가 3보다 크면 && 이후를 실행 아래 if 조건문과 같다.
+      if (c > 3) {
+        console.log("c > 6");
+      }
+
+      //조건이 복잡하면 변수로 선처리후 조건문
+      c > 1 && c > 3 && c > 5 && console.log("c > 5");
+
+      const isNum = c > 1 && c > 3 && c > 5;
+      isNum && console.log("c > 5");
+      // || 연산자를 활용한 조건문
+      //a||b
+      //a가 false면 b를 실행
+
+      const d = 12;
+      d > 11 || console.log("d <=11 ");
+
+      0 || console.log("run");
+      0 || false || "" || console.log(" all is false run");
+      // ??(nullish coalescing)을 활용한 조건문 (es6 이후)
+      //a ?? b
+      // a가 null이거나 undefined인 경우에만 b를 실행
+      //const e = 10;
+      e > 5 ?? console.log("e > 5");
+      null ?? console.log("e= null");
+
+      const e = {
+        a: 1,
+        b: 2,
+        c: 0,
+      };
+      //console.log("e.c", e.c);
+      e.c ?? console.log("e.c undefined or null"); // undefined, null일 경우에만 실행
+      e.c || console.log("e.c false"); //undefined, null일 경우도 false여서 조건문 실행
+    </script>
+  </body>
+</html>

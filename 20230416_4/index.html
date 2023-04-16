@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 20230416_4__5
+       * 조건문 활용
+       */
+      //선언식, 기명함수
+      function call() {}
+      //표현식, 익명함수 (es6 이후 사용안함)
+      const call2 = function () {};
+
+      //화살표 함수
+      const arrw = () => {};
+
+      const sum = (a, b) => {
+        return a + b;
+      };
+      console.log("sum(1,2)", sum(1, 2));
+
+      const multiply = (a) => {
+        return a * 5;
+      };
+
+      const b = prompt();
+      const calc = multiply(b);
+
+      console.log("calc ", calc);
+
+      const isDouble = (num) => {
+        return num % 2 === 0 ? true : false;
+      };
+      const isThird = (num) => {
+        return num % 3 === 0 ? true : false;
+      };
+
+      if (isDouble(calc) && isThird(calc)) {
+        console.log("calc is double + Third");
+      } else {
+        console.log("calc is not double + third");
+      }
+
+      const isDoubleAndThird = (num) => {
+        if (num % 2 === 0 && num % 3 === 0) {
+          return true;
+        }
+        return false;
+      };
+
+      if (isDoubleAndThird(calc)) {
+        console.log("calc is double + Third");
+      } else {
+        console.log("calc is not double + third");
+      }
+    </script>
+  </body>
+</html>

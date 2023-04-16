@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 20230416-2
+       * 조건물(if)
+       * if else if else
+       */
+      const a = "grape";
+      if (a === "strawberry") {
+        console.log("a is strawberry");
+      } else if (a === "lemon") {
+        console.log("a is lemon");
+      } else if (a === "apple") {
+        console.log("a is apple");
+      } else if (a === "mango") {
+        console.log("a is mango");
+      } else {
+        console.log("a is not fruit");
+      }
+
+      const b = -1;
+      if (b > 1) {
+        console.log("b는 1보다 크다");
+        if (b === 3) {
+          console.log("b는 3");
+        } else if (b === 5) {
+          console.log("b는5");
+        } else {
+          console.log("b", b);
+        }
+      } else {
+        console.log("b는 1보다 크다");
+      }
+
+      const c = 1;
+      const d = "";
+      const e = true;
+      if ((c || d) && e) {
+        console.log("c, d,e is true");
+      }
+    </script>
+  </body>
+</html>

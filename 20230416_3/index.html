@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 20230416-3
+       * 조건물(switch)
+       * 값을 조건으로 사용
+       * case로 condition 구분
+       * 모든 case가 false 이면 default
+       * break가 추가되지 않으면 모든 로직을 수행
+       */
+
+      const fruit = "mango";
+      switch (fruit) {
+        case "lemon": {
+          console.log("lemon");
+          break;
+        }
+        case "apple": {
+          console.log("apple");
+          break;
+        }
+        case "banana":
+        case "mango": {
+          console.log("banana mango");
+          break;
+        }
+        default: {
+          console.log("not fruit");
+        }
+      }
+    </script>
+  </body>
+</html>
